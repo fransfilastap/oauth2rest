@@ -1,0 +1,13 @@
+app:
+  security:
+    cors:
+      origin: https://localhost:3000
+provider:
+  host: https://account.bphn.go.id
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${provider.host}/oauth2/token
+          jwk-set-uri: ${provider.host}/oauth2/jwks
