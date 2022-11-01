@@ -1,9 +1,9 @@
 app:
   security:
     cors:
-      origin: https://localhost:3000
+      origin: <replace with your front end url>
 provider:
-  host: https://account.bphn.go.id
+  host: <replace with your idp provider url>
 spring:
   security:
     oauth2:
